@@ -1,0 +1,37 @@
+.app {
+  background-image: url("https://images.unsplash.com/photo-1537210249814-b9a10a161ae4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=felix-mittermeier-L4-16dmZ-1c-unsplash.jpg&w=2400");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  z-index: 1;
+  background-color: #ffffff00;
+  padding: 1rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mainCity {
+  backdrop-filter: blur(8px);
+  background-color: #00000040;
+}
+
+.app,
+.mainCity {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.mainCity,
+.reelCities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

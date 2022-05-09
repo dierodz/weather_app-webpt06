@@ -1,0 +1,83 @@
+.card {
+  position: relative;
+
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+
+  background-color: var(--card-bkg-color);
+  color: white;
+
+  padding: 0.25rem;
+
+  width: fit-content;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cardBtn {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  border: 1px solid transparent;
+  border-radius: 9999px;
+
+  cursor: pointer;
+
+  color: white;
+  background-color: var(--btn-bkg-danger);
+
+  transition: background-color 250ms;
+}
+
+.cardBtn:hover {
+  background-color: var(--btn-bkg-danger-hover);
+}
+
+.card > section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.mainCard {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.mainCard .cardBtn {
+  display: none;
+}
+
+.mainCard .name {
+  font-size: 3rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.mainCard > section {
+  align-items: flex-start;
+}
+
+.mainCard > section > .temp {
+  padding-top: 2rem;
+}
+
+.mainCard > section > img {
+  width: 150px;
+  height: 150px;
+}
